@@ -1,1 +1,1 @@
-Please see the server and client directories for installation instructions
+Clone the repo, then see the server and client directories for further instructions

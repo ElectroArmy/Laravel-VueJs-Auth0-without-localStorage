@@ -1,0 +1,1 @@
+Please see the server and client directories for installation instructions

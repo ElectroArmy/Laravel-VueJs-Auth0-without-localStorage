@@ -2,128 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e416ff34-fdb0-45e9-b194-36f367cd7033" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LaravelAuth03.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Console/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Exceptions/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Controllers/PhotoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Middleware/Auth0Middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Photo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/artisan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bootstrap/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bootstrap/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/broadcasting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/filesystems.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/hashing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/logging.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/queue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/factories/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/migrations/2018_11_18_195250_create_photos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/migrations/2018_11_24_103724_create_photo_user_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/seeds/PhotosTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/test.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/svg/403.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/svg/404.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/svg/500.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/svg/503.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/resources/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/resources/lang/en/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/resources/lang/en/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/resources/lang/en/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/resources/lang/en/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/resources/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/resources/views/welcome.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/channels.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/storage/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/storage/app/public/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/storage/framework/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/storage/framework/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/storage/framework/testing/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/storage/framework/views/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/storage/logs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tests/CreatesApplication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tests/TestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/webpack.mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Home.vue" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,31 +43,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/README.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="34">
+                <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/client/src/views/Bookmark.vue" />
+        <option value="$PROJECT_DIR$/server/README.MD" />
       </list>
     </option>
   </component>
@@ -301,7 +179,7 @@
             <path>
               <item name="LaravelAuth03" type="b2602c69:ProjectViewProjectNode" />
               <item name="LaravelAuth03" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -313,7 +191,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543179125442" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543179583906" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -342,17 +220,48 @@
       <updated>1543165425391</updated>
       <workItem from="1543165427011" duration="291000" />
       <workItem from="1543165794320" duration="989000" />
-      <workItem from="1543178207664" duration="891000" />
+      <workItem from="1543178207664" duration="1370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2171000" />
+    <option name="totallyTimeSpent" value="2650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2574899" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.61080074" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2574899" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -382,7 +291,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -405,10 +314,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/README.MD">
+    <entry file="file://$PROJECT_DIR$/client/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="68">
+            <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -420,16 +334,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/README.md">
+    <entry file="file://$PROJECT_DIR$/server/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

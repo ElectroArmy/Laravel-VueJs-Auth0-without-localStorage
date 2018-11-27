@@ -14,6 +14,10 @@
 					<router-link to="/"><b>Welcome {{authState.user.nickname}}</b></router-link>
 				</li>
 
+        <li class="navbar__item" v-if="auth">
+					<router-link to="/">ALL PHOTOS</router-link>
+				</li>
+
 				<li class="navbar__item" v-if="auth">
 					<router-link to="/photos/create">ADD PHOTO</router-link>
 				</li>

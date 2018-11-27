@@ -1,38 +1,36 @@
 <template>
-    <div class="photo__show">
-		<div class="photo__header">
-			<h3>{{action}} Photo</h3>
-			<div>
-				<button class="btn btn__primary" @click="save" :disabled="isProcessing">Save</button>
-				<button class="btn" @click="$router.back()" :disabled="isProcessing">Cancel</button>
-			</div>
-		</div>
-		<div class="photo__row">
-			<div class="photo__image">
-				<div class="photo__box">
-					<image-upload v-if="isProcessing == false" v-model="form.image"></image-upload>
-                    <div class="loader" v-if="isProcessing == true"></div>
-					<small class="error__control" v-if="error.image">{{error.image[0]}}</small>
-				</div>
-			</div>
-			<div class="photo__details">
-				<div class="photo__details_inner">
-					<div class="form__group">
-					    <label>Name</label>
-					    <input type="text" class="form__control" v-model="form.name">
-					    <small class="error__control" v-if="error.name">{{error.name[0]}}</small>
-					</div>
-					<div class="form__group">
-					    <label>Description</label>
-					    <textarea class="form__control form__description" v-model="form.description"></textarea>
-					    <small class="error__control" v-if="error.description">{{error.description[0]}}</small>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-	</div>
+  <div class="photo__show">
+    <div class="photo__header">
+      <h3>{{action}} Photo</h3>
+      <div>
+        <button class="btn btn__primary" @click="save" :disabled="isProcessing">Save</button>
+        <button class="btn" @click="$router.back()" :disabled="isProcessing">Cancel</button>
+      </div>
+    </div>
+    <div class="photo__row">
+      <div class="photo__image">
+        <div class="photo__box">
+          <image-upload v-if="isProcessing == false" v-model="form.image"></image-upload>
+          <div class="loader" v-if="isProcessing == true"></div>
+          <small class="error__control" v-if="error.image">{{error.image[0]}}</small>
+        </div>
+      </div>
+      <div class="photo__details">
+        <div class="photo__details_inner">
+          <div class="form__group">
+            <label>Name</label>
+            <input type="text" class="form__control" v-model="form.name">
+            <small class="error__control" v-if="error.name">{{error.name[0]}}</small>
+          </div>
+          <div class="form__group">
+            <label>Description</label>
+            <textarea class="form__control form__description" v-model="form.description"></textarea>
+            <small class="error__control" v-if="error.description">{{error.description[0]}}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

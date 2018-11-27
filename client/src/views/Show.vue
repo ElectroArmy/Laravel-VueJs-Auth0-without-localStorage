@@ -1,30 +1,35 @@
 <template>
-	<div class="photo__show">
-		<div class="photo__row">
-			<div class="photo__image">
-				<div class="photo__box">
-					<img :src="'http://localhost:8000/images/' + photo.image" v-if="photo.image">
-				</div>
-			</div>
-			<div class="photo__details">
-				<div class="photo__details_inner">
-					<small v-if="photo_name">Submitted by: {{photo_name}}</small>
-					<h1 class="photo__title">{{photo.name}}</h1>
-					<p class="photo__description">{{photo.description}}</p>
+  <div class="photo__show">
+    <div class="photo__row">
+      <div class="photo__image">
+        <div class="photo__box">
+          <img :src="'http://localhost:8000/images/' + photo.image" v-if="photo.image">
+        </div>
+      </div>
+      <div class="photo__details">
+        <div class="photo__details_inner">
+          <small v-if="photo_name">Submitted by: {{photo_name}}</small>
+          <h1 class="photo__title">{{photo.name}}</h1>
+          <p class="photo__description">{{photo.description}}</p>
 
-                    <div v-if="auth">
-						<router-link :to="`/photos/${photo.id}/edit`" class="btn btn-primary" v-if="user_name === photo_name">
-							Edit
-						</router-link>
-						<button class="btn btn__danger" @click="remove" :disabled="isProcessing" v-if="user_name === photo_name">Delete</button>
-						<button class="btn btn-info" @click="bookmark" :disabled="isProcessing">{{ bookmarked }}</button>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-	</div>
+          <div v-if="auth">
+            <router-link
+              :to="`/photos/${photo.id}/edit`"
+              class="btn btn-primary"
+              v-if="user_name === photo_name"
+            >Edit</router-link>
+            <button
+              class="btn btn__danger"
+              @click="remove"
+              :disabled="isProcessing"
+              v-if="user_name === photo_name"
+            >Delete</button>
+            <button class="btn btn-info" @click="bookmark" :disabled="isProcessing">{{ bookmarked }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script type="text/javascript">

@@ -1,5 +1,7 @@
 <template>
 	<div class="photo__list" >
+    <div class="loader" v-if="isProcessing == true"></div>
+    <div v-if="error !== null" class="row"><h1>You have no bookmarks</h1></div>
 		<div class="photo__item" v-for="photo in photos">
 			<router-link class="photo__inner" :to="`/photos/${photo.id}`" style="margin-bottom:0px;">
 				<img :src="'http://localhost:8000/images/' + photo.image" v-if="photo.image">
@@ -17,10 +19,13 @@ export default {
   data() {
     return {
       photos: [],
-      authState: check.state
+      authState: check.state,
+      isProcessing: false,
+      error: null
     };
   },
   created() {
+    this.isProcessing = true
     check.initialize().then(res => {
       let form = {
         sub: this.authState.user.sub
@@ -33,7 +38,12 @@ export default {
           Authorization: "Bearer " + this.authState.access_token
         }
       }).then(res => {
+        this.isProcessing = false;
         this.photos = res.data.photos;
+        if (this.photos === undefined || this.photos.length == 0) {
+          this.error = "You have no bookmarks"
+
+        }
       });
     });
   }

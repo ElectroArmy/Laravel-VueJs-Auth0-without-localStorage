@@ -52,32 +52,7 @@ export default {
     };
   },
   created() {
-    this.isProcessing = true;
-    axios({
-      method: "get",
-      url: `http://localhost:8000/api/photos/${this.$route.params.id}`
-    }).then(res => {
-      this.photo = res.data.photo;
-
-      check.initialize().then(data => {
-        let form = {
-          photo_id: this.$route.params.id,
-          sub: this.authState.user.sub
-        };
-        axios({
-          method: "post",
-          url: `http://localhost:8000/api/getuser`,
-          data: form
-        }).then(res => {
-          this.isProcessing = false;
-          console.log(res.data.photo.user);
-          if (res.data.photo.user) {
-            this.photo_name = res.data.photo.user.name;
-          }
-          this.bookmarked = res.data.bookmarked;
-        });
-      });
-    });
+    this.getPhoto();
   },
   computed: {
     auth() {
@@ -137,6 +112,35 @@ export default {
       } else {
         Flash.setSuccess("Please log in");
       }
+    },
+
+    getPhoto() {
+      this.isProcessing = true;
+      axios({
+        method: "get",
+        url: `http://localhost:8000/api/photos/${this.$route.params.id}`
+      }).then(res => {
+        this.photo = res.data.photo;
+
+        check.initialize().then(data => {
+          let form = {
+            photo_id: this.$route.params.id,
+            sub: this.authState.user.sub
+          };
+          axios({
+            method: "post",
+            url: `http://localhost:8000/api/getuser`,
+            data: form
+          }).then(res => {
+            this.isProcessing = false;
+            console.log(res.data.photo.user);
+            if (res.data.photo.user) {
+              this.photo_name = res.data.photo.user.name;
+            }
+            this.bookmarked = res.data.bookmarked;
+          });
+        });
+      });
     }
   }
 };
